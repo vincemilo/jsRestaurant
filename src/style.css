@@ -1,11 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 16px;
 }
 
 .nav-buttons {
     display: flex;
     gap: 16px;
+    font-size: 1rem;
+    padding: 8px;
+}
+
+main {
+    background: url('bagels.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.story {
+    color:white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 16px;
+    margin: 32px;
+    border-radius: 8px;
+    font-size: 1.5rem;
 }
