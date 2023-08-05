@@ -1,6 +1,13 @@
-body {
+* {
     margin: 0;
     padding: 0;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100vh;
 }
 
 header {
@@ -22,13 +29,14 @@ header {
 
 main {
     background: url('bagels.jpg');
-    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    flex: 1;
 }
 
 .story {
@@ -39,4 +47,12 @@ main {
     margin: 32px;
     border-radius: 8px;
     font-size: 1.5rem;
+}
+
+footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
 }
