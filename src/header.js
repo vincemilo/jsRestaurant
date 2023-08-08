@@ -8,13 +8,18 @@ export default function header() {
 
     headerDiv.appendChild(logo);
 
-    const elements = [homeDiv, menuDiv, contactDiv]
+    const elements = [homeDiv, menuDiv, contactDiv];
+    let elementName = ['home', 'menu', 'contact'];
+    let i = 0;
     
     elements.forEach((element) => {
+        element.className = `${elementName[i]} btn`;
         navButtons.appendChild(element);
+        i++
     });
 
     navButtons.className = 'nav-buttons';
+
     headerDiv.appendChild(navButtons);
 
     logo.innerHTML = 'Bodcacious Bagels';
