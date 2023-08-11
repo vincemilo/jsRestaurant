@@ -39,7 +39,7 @@ main {
     flex: 1;
 }
 
-.story {
+.story, .menu-div, .contact-div {
     color:white;
     text-align: center;
     background: rgba(0, 0, 0, 0.4);
@@ -60,4 +60,16 @@ footer {
 
 .btn {
     cursor: pointer;
+}
+
+.item {
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+
+.contact-info {
+    padding: 8px;
 }
